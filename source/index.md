@@ -21,5 +21,3 @@ search: true
 # Introduction
 
 This is the MrD Consumer API that will be used by the Mobile App and the Single-Page Admin App.
-   
-An edit!!!
