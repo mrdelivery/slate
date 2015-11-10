@@ -35,6 +35,8 @@ curl http://qa.mrd.com:8888/coupons
 Creates a new coupon.
 
 ### Arguments
+ | 
+-|-
 description<br/>_string_<br/>_optional_|The description of the coupon
 code<br/>_string_<br/>_optional_|The coupon code, autogenerates if none specified
 percentage_amount<br/>_integer_<br/>_optional_|Set if the value of the coupon offsets an order value based on percentage of order
