@@ -4,8 +4,6 @@ This is the coupons api documentation.
 
 ## List Coupons
 
-Gets the full list of coupons in the system.
-
 > Definition: 
 
 ```
@@ -30,22 +28,10 @@ curl http://qa.mrd.com:8888/coupons
 }
 ```
 
+Gets the full list of coupons in the system.
+
+
 ## Create Coupon
-
-Creates a new coupon.
-
-### Arguments
-Parameter | Description
---------- | -----------
-description<br/>_string_<br/>_optional_|The description of the coupon
-code<br/>_string_<br/>_optional_|The coupon code, autogenerates if none specified
-percentage_amount<br/>_integer_<br/>_optional_|Set if the value of the coupon offsets an order value based on percentage of order
-value_amount<br/>_integer_<br/>_optional_|Set if the value of the coupon offsets an order value based on the this value (in cents)
-qualifying_amount<br/>_integer_<br/>_optional_|Amount in cents of the order needed in order for this coupon to be attached to this order
-usage_limit<br/>_integer_<br/>_optional_|Limit the amount of times the coupon can be redeemed. Default: `-1 (unlimited)`
-limit_type<br/>_string_<br/>_optional_|What kind of limit the coupon imposes. Possible values: `user`, `all`. Default: `all`
-\_valid\_at<br/>_string_<br/>_optional_|When the coupon becomes valid from. Default: `current_date`.
-\_expires\_at<br/>_string_<br/>_optional_|When the coupon expires
 
 > Definition: 
 
@@ -79,3 +65,18 @@ curl http://qa.mrd.com:8888/coupons -X POST -H "Content-Type: application/json"
    "limit_type": "user"
 }
 ```
+
+Creates a new coupon.
+
+### Arguments
+Parameter | Description
+--------- | -----------
+description<br/>_string_<br/>_optional_|The description of the coupon
+code<br/>_string_<br/>_optional_|The coupon code, autogenerates if none specified
+percentage_amount<br/>_integer_<br/>_optional_|Set if the value of the coupon offsets an order value based on percentage of order
+value_amount<br/>_integer_<br/>_optional_|Set if the value of the coupon offsets an order value based on the this value (in cents)
+qualifying_amount<br/>_integer_<br/>_optional_|Amount in cents of the order needed in order for this coupon to be attached to this order
+usage_limit<br/>_integer_<br/>_optional_|Limit the amount of times the coupon can be redeemed. Default: `-1 (unlimited)`
+limit_type<br/>_string_<br/>_optional_|What kind of limit the coupon imposes. Possible values: `user`, `all`. Default: `all`
+\_valid\_at<br/>_string_<br/>_optional_|When the coupon becomes valid from. Default: `current_date`.
+\_expires\_at<br/>_string_<br/>_optional_|When the coupon expires
