@@ -30,6 +30,9 @@ curl http://qa.mrd.com:8888/coupons
 
 Gets the full list of coupons in the system.
 
+
+## Create Coupon
+
 > Definition: 
 
 ```
@@ -62,7 +65,6 @@ curl http://qa.mrd.com:8888/coupons -X POST -H "Content-Type: application/json"
    "limit_type": "user"
 }
 ```
-## Create Coupon
 
 Creates a new coupon.
 
