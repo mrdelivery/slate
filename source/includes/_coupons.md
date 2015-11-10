@@ -8,7 +8,7 @@ Gets the full list of coupons in the system.
 
 > Definition:
 
-GET http://qa.mrd.com:8888/coupons
+> GET http://qa.mrd.com:8888/coupons
 
 > Example Request:
 
