@@ -1,23 +1,28 @@
 ---
-title: MRD API Reference
+title: MrD Food API Reference
 
 language_tabs:
-  - json
+  - shell: cURL
+  - javascript: Javascript
+  - python: Python
+  - java: Android
+  - c: xCode
   
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
-
-
 includes:
-  - restaurants
-  - users
-  - errors
+  - coupons
  
 search: true
 ---
 
 # Introduction
 
-This is the MrD Consumer API that will be used by the Mobile App and the Single-Page Admin App.
+This is the MrD Food Consumer API that will be used by the following consumers:
+
+* Restaurant App
+* Customer App (iOS and Android)
+* HQ App
+* Marketplace App
+* Call Center App
