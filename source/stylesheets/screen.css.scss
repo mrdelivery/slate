@@ -421,6 +421,10 @@ html, body {
       vertical-align: bottom;
     }
 
+    td:first {
+      text-align: right;
+    }
+
     td {
       padding: 10px;
     }
