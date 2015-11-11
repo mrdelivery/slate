@@ -68,6 +68,10 @@ curl http://qa.mrd.com:8888/coupons -X POST -H "Content-Type: application/json"
 
 Creates a new coupon.
 
+### Coupon code generation and Luhn checksum generator
+
+Coupon code is used as a prefix and a 8 length random string of alphanumeric characters is appended. The 8 values end with a luhn digit based on the first 7's ascii integer values appended to each other as strings.
+
 ### Arguments
 Parameter | Description
 --------- | -----------
@@ -150,7 +154,7 @@ curl http://qa.mrd.com:8888/coupons/{coupon_id} -X PUT -H "Content-Type: applica
 }
 ```
 
-Creates a new coupon.
+Updates the coupon. 
 
 ### Arguments
 Parameter | Description
