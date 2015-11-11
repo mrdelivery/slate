@@ -68,6 +68,42 @@ curl http://qa.mrd.com:8888/coupons -X POST -H "Content-Type: application/json"
 
 Creates a new coupon.
 
+## Get Coupon Details
+
+> Definition: 
+
+```
+GET http://qa.mrd.com:8888/coupons/{coupon_id}
+```
+
+> Example Request:
+
+```shell
+curl http://qa.mrd.com:8888/coupons/b67818fc878911e5af63feff819cdc9f
+```
+
+> Response:
+
+```json
+{
+   "_uuid": "b67818fc878911e5af63feff819cdc9f",
+   "_updated_at" : "2015-11-12 14:31",
+   "_created_at" : "2015-11-12 14:31",
+   "_valid_at": "2015-11-12 14:31",
+   "_expires_at": "2015-01-01 00:00:00",
+
+   "description": "Promotional Coupon",
+   "code" : "PROMO001",
+   "value_amount" : 1000,
+   "authorization_count": 0,
+   "usage_count": 0,
+   "usage_limit": 100,
+   "limit_type": "user"
+}
+```
+
+Read the coupon details.
+
 ### Arguments
 Parameter | Description
 --------- | -----------
