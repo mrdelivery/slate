@@ -57,7 +57,7 @@ curl http://qa.mrd.com:8888/coupons -X POST -H "Content-Type: application/json"
    "_expires_at": "2015-01-01 00:00:00",
 
    "description": "Promotional Coupon",
-   "code" : "PROMO001",
+   "code" : "FOOD27926130",
    "value_amount" : 1000,
    "authorization_count": 0,
    "usage_count": 0,
@@ -106,7 +106,7 @@ curl http://qa.mrd.com:8888/coupons/b67818fc878911e5af63feff819cdc9f
    "_expires_at": "2015-01-01 00:00:00",
 
    "description": "Promotional Coupon",
-   "code" : "PROMO001",
+   "code" : "FOOD27926130",
    "value_amount" : 1000,
    "authorization_count": 0,
    "usage_count": 0,
@@ -141,7 +141,7 @@ curl http://qa.mrd.com:8888/coupons/{coupon_id} -X PUT -H "Content-Type: applica
    "_expires_at": "2015-01-01 00:00:00",
 
    "description": "Promotional Coupon",
-   "code" : "PROMO001",
+   "code" : "FOOD27926130",
    "value_amount" : 1000,
    "authorization_count": 0,
    "usage_count": 0,
