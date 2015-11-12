@@ -178,36 +178,36 @@ Parameter | Description
 --------- | -----------
 type<br/>_string_<br/>_required_|Whether or not this is a `collect` or `delivery` order.
 customer<br/>_string_<br/>_required_|The customer object.
-- customer[id]<br/>_string_<br/>_required_|The customer id.
-- customer[address]<br/>_string_<br/>_required_|The customer's session address object.
-- - customer[address][street_name]<br/>_string_<br/>_required_|The customer's session address street name.
-- - customer[address][province]<br/>_string_<br/>_optional_|The customer's session address province.
-- - customer[address][town]<br/>_string_<br/>_required_|The customer's session address town.
-- - customer[address][postal_code]<br/>_string_<br/>_required_|The customer's session address postal code.
-- - customer[address][suburb]<br/>_string_<br/>_required_|The customer's session address suburb.
-- - customer[address][longitude]<br/>_string_<br/>_required_|The customer's session address longitude.
-- - customer[address][latitude]<br/>_string_<br/>_required_|The customer's session address latitude.
+customer[id]<br/>_string_<br/>_required_|The customer id.
+customer[address]<br/>_string_<br/>_required_|The customer's session address object.
+customer[address][street_name]<br/>_string_<br/>_required_|The customer's session address street name.
+customer[address][province]<br/>_string_<br/>_optional_|The customer's session address province.
+customer[address][town]<br/>_string_<br/>_required_|The customer's session address town.
+customer[address][postal_code]<br/>_string_<br/>_required_|The customer's session address postal code.
+customer[address][suburb]<br/>_string_<br/>_required_|The customer's session address suburb.
+customer[address][longitude]<br/>_string_<br/>_required_|The customer's session address longitude.
+customer[address][latitude]<br/>_string_<br/>_required_|The customer's session address latitude.
 restaurant<br/>_string_<br/>_required_|The restaurant object
-- restaurant[id]<br/>_string_<br/>_required_|The restaurant id.
+restaurant[id]<br/>_string_<br/>_required_|The restaurant id.
 items[]<br/>_string_<br/>_required_|The order line items array.
-- items[][description]<br/>_string_<br/>_required_|The order line items description.
-- items[][variant_name]<br/>_string_<br/>_required_|The order line items variant description.
-- items[][variant_id]<br/>_string_<br/>_required_|The order line items variant id.
-- items[][price]<br/>_string_<br/>_required_|The order line items price of the variant chosen.
-- items[][quantity]<br/>_string_<br/>_required_|The order line items quantity.
-- items[][addons][]<br/>_string_<br/>_required_|The order line items addons array.
-- - items[][addons][][id]<br/>_string_<br/>_required_|The order line items addons array.
-- - items[][addons][][description]<br/>_string_<br/>_required_|The order line items addons array.
-- items[][extras][]<br/>_string_<br/>_required_|The order line items extras array.
-- - items[][extras][][id]<br/>_string_<br/>_required_|The order line items addons array.
-- - items[][extras][][description]<br/>_string_<br/>_required_|The order line items addons array.
-- - items[][extras][][price]<br/>_string_<br/>_required_|The order line items addons array.
-- items[][options][]<br/>_string_<br/>_required_|The order line items options array.
-- - items[][options][][id]<br/>_string_<br/>_required_|The order line items addons array.
-- - items[][options][][description]<br/>_string_<br/>_required_|The order line items addons array.
+items[][description]<br/>_string_<br/>_required_|The order line items description.
+items[][variant_name]<br/>_string_<br/>_required_|The order line items variant description.
+items[][variant_id]<br/>_string_<br/>_required_|The order line items variant id.
+items[][price]<br/>_string_<br/>_required_|The order line items price of the variant chosen.
+items[][quantity]<br/>_string_<br/>_required_|The order line items quantity.
+items[][addons][]<br/>_string_<br/>_required_|The order line items addons array.
+items[][addons][][id]<br/>_string_<br/>_required_|The order line items addons array.
+items[][addons][][description]<br/>_string_<br/>_required_|The order line items addons array.
+items[][extras][]<br/>_string_<br/>_required_|The order line items extras array.
+items[][extras][][id]<br/>_string_<br/>_required_|The order line items addons array.
+items[][extras][][description]<br/>_string_<br/>_required_|The order line items addons array.
+items[][extras][][price]<br/>_string_<br/>_required_|The order line items addons array.
+items[][options][]<br/>_string_<br/>_required_|The order line items options array.
+items[][options][][id]<br/>_string_<br/>_required_|The order line items addons array.
+items[][options][][description]<br/>_string_<br/>_required_|The order line items addons array.
 totals<br/>_integer_<br/>_required_|The totals object.
-- totals[subtotal]<br/>_integer_<br/>_required_|The subtotal of the order that was shown to the customer.
-- totals[delivery\_fee]<br/>_integer_<br/>_optional_|The delivery fee of the order that was shown to the customer.
+totals[subtotal]<br/>_integer_<br/>_required_|The subtotal of the order that was shown to the customer.
+totals[delivery\_fee]<br/>_integer_<br/>_optional_|The delivery fee of the order that was shown to the customer.
 
 ## STEP 1a: Coupon Authorization Against Order
 
