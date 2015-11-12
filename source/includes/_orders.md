@@ -289,7 +289,7 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
     "customer" : {
         "phone_2" : "000 000 0000",
         "address" : {
-            "building_type' : "apartment", // 'house', 'office', 'hotel / bed and breadfast']
+            "building_type' : "apartment",
             'complex' : "Tuscany",
             'street_number' : "1"
         }
@@ -318,6 +318,10 @@ The confirmation of customer details is done at the customer device level
 ### Consumers
 
 * CUSTOMER_APP
+
+### Arguments
+
+// 'house', 'office', 'hotel / bed and breadfast']
 
 ## STEP 3: Customer/Customer Device Confirm Payment
 
