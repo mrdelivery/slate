@@ -35,7 +35,7 @@ POST http://qa.mrd.com:8888/coupons
 
 > Request
 
-```shell
+```json
 {
    "description": "Promotional Coupon", 
    "value_amount": 1000, 
@@ -124,7 +124,7 @@ PUT http://qa.mrd.com:8888/coupons/{coupon_id}
 
 > Request
 
-```shell
+```json
 {
    "description": "Promotional Coupon", 
    "value_amount": 1000, 
