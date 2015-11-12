@@ -4,19 +4,13 @@ This is the coupons api documentation.
 
 ## List Coupons
 
-> Definition: 
+> Definition
 
 ```
 GET http://qa.mrd.com:8888/coupons
 ```
 
-> Example Request:
-
-```shell
-curl http://qa.mrd.com:8888/coupons
-```
-
-> Response:
+> Success Response [200 OK]
 
 ```json
 {
@@ -39,14 +33,19 @@ Gets the full list of coupons in the system.
 POST http://qa.mrd.com:8888/coupons
 ```
 
-> Example Request:
+> Request
 
 ```shell
-curl http://qa.mrd.com:8888/coupons -X POST -H "Content-Type: application/json"
-  -d '{"description": "Promotional Coupon", "value_amount": 1000, "usage_limit": 100, "limit_type": "user", "_expires_at": "2015-01-01 00:00:00"}'
+{
+   "description": "Promotional Coupon", 
+   "value_amount": 1000, 
+   "usage_limit": 100, 
+   "limit_type": "user", 
+   "_expires_at": "2015-01-01 00:00:00"
+}
 ```
 
-> Response:
+> Success Response [201 Created]
 
 ```json
 {
@@ -93,13 +92,7 @@ limit_type<br/>_string_<br/>_optional_|What kind of limit the coupon imposes. Po
 GET http://qa.mrd.com:8888/coupons/{coupon_id}
 ```
 
-> Example Request:
-
-```shell
-curl http://qa.mrd.com:8888/coupons/b67818fc878911e5af63feff819cdc9f
-```
-
-> Response:
+> Success Response [200 OK]
 
 ```json
 {
@@ -123,18 +116,25 @@ Read the coupon details.
 
 ## Update Coupon
 
+> Definition
+
 ```
 PUT http://qa.mrd.com:8888/coupons/{coupon_id}
 ```
 
-> Example Request:
+> Request
 
 ```shell
-curl http://qa.mrd.com:8888/coupons/{coupon_id} -X PUT -H "Content-Type: application/json"
-  -d '{"description": "Promotional Coupon", "value_amount": 1000, "usage_limit": 100, "limit_type": "user", "_expires_at": "2015-01-01 00:00:00"}'
+{
+   "description": "Promotional Coupon", 
+   "value_amount": 1000, 
+   "usage_limit": 100, 
+   "limit_type": "user", 
+   "_expires_at": "2015-01-01 00:00:00"
+}
 ```
 
-> Response:
+> Success Response [200 OK]
 
 ```json
 {
@@ -171,22 +171,12 @@ limit_type<br/>_string_<br/>_optional_|What kind of limit the coupon imposes. Po
 
 ## Delete Coupon
 
-> Definition: 
+> Definition:
 
 ```
 DELETE http://qa.mrd.com:8888/coupons/{coupon_id}
 ```
 
-> Example Request:
-
-```shell
-curl http://qa.mrd.com:8888/coupons/{coupon_id} -X DELETE
-```
-
-> Response:
-
-```
-HTTP 200 OK
-```
+> Success Response [200 OK]
 
 Expires the coupon.

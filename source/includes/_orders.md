@@ -4,7 +4,13 @@ This is the order creation flow api.
 
 ## STEP 1: Create Order
 
-> HTTP Request
+> Definition
+
+```
+POST http://qa.mrd.com:8888/orders
+```
+
+> Request
 
 > Success Response [200 OK]
 
@@ -17,6 +23,12 @@ The creation of the order is done at the customer device level.
 * CUSTOMER_APP
 
 ## STEP 1a: Coupon Authorization Against Order
+
+> Definition
+
+```
+PUT http://qa.mrd.com:8888/orders/{order_id}
+```
 
 > HTTP Request
 
@@ -32,6 +44,12 @@ The attachment of the coupon happens at the customer device level.
 
 ## STEP 2: Customer Detail Confirmation
 
+> Definition
+
+```
+PUT http://qa.mrd.com:8888/orders/{order_id}
+```
+
 > HTTP Request
 
 > Success Response [200 OK]
@@ -45,6 +63,12 @@ The confirmation of customer details is done at the customer device level
 * CUSTOMER_APP
 
 ## STEP 3: Customer/Customer Device Confirm Payment
+
+> Definition
+
+```
+PUT http://qa.mrd.com:8888/orders/{order_id}
+```
 
 > HTTP Request
 
@@ -60,6 +84,12 @@ The confirmation of the payment method is done at the customer device level. For
 
 ## STEP 4a: Restaurant Acceptance
 
+> Definition
+
+```
+PUT http://qa.mrd.com:8888/orders/{order_id}
+```
+
 > HTTP Request
 
 > Success Response [200 OK]
@@ -74,6 +104,12 @@ The restaurant device notifies the server that the order can be serviced.
 
 ## STEP 4b: Restaurant Rejection
 
+> Definition
+
+```
+PUT http://qa.mrd.com:8888/orders/{order_id}
+```
+
 > HTTP Request
 
 > Success Response [200 OK]
@@ -87,6 +123,12 @@ The restaurant device notifies the server that the order can be serviced.
 * RESTAURANT_APP
 
 ## STEP 5: Track Order
+
+> Definition
+
+```
+PUT http://qa.mrd.com:8888/orders/{order_id}
+```
 
 > HTTP Request
 
