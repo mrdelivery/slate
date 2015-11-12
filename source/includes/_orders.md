@@ -283,11 +283,37 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
 
 > Request
 
+```json
+{
+    "status": "user_confirmed_details",
+    "customer" : {
+        "phone_2" : "000 000 0000",
+        "address" : {
+            "building_type' : "apartment", // 'house', 'office', 'hotel / bed and breadfast']
+            'complex' : "Tuscany",
+            'street_number' : "1"
+        }
+    },
+    "delivery" : {
+      "instructions" : "be careful of the dog",
+      "driver_tip" : 25.9
+    },
+    "payment" : {
+      "type" : "credit"
+    }
+}
+```
+
 > Success Response [200 OK]
 
 > Error Response [400 BAD_REQUEST]
 
 The confirmation of customer details is done at the customer device level
+
+### Todo
+
+* Return error if `delivery[instruction]` set on a collect order
+* Support `restaurant[instruction]` for collect instructions
 
 ### Consumers
 
