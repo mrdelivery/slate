@@ -333,6 +333,13 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
 
 > Request
 
+
+```json
+{
+    "status": "user_confirmed_payment"
+}
+```
+
 > Success Response [200 OK]
 
 > Error Response [400 BAD_REQUEST]
@@ -353,6 +360,16 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
 
 > Request
 
+```json
+{
+    "status": "restaurant_accepted",
+    "restaurant" : {
+       "preparation_time" : 20,
+       "received_at" : "2015-09-15 19:20"
+    }
+}
+```
+
 > Success Response [200 OK]
 
 > Error Response [400 BAD_REQUEST]
@@ -372,6 +389,17 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
 ```
 
 > Request
+
+```json
+{
+    "status": "restaurant_rejected",
+    "failed_reason" : "slow",
+    "restaurant" : {
+       "preparation_time" : 20,
+       "received_at" : "2015-09-15 19:20"
+    }
+}
+```
 
 > Success Response [200 OK]
 
@@ -408,6 +436,19 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
 ```
 
 > Request
+
+```json
+{
+   "ratings" : {
+       "food_quality_rating" : 4,
+       "packaging_rating" : 5,
+       "value_rating" : 3,
+       "driver_rating" : 3,
+       "restaurant_rating_comment" : "this was an awesome experience",
+       "driver_rating_comment" : "this was an awesome experience"
+   }
+}
+```
 
 > Success Response [200 OK]
 
