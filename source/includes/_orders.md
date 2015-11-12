@@ -289,9 +289,9 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
     "customer" : {
         "phone_2" : "000 000 0000",
         "address" : {
-            "building_type' : "apartment",
-            'complex' : "Tuscany",
-            'street_number' : "1"
+            "building_type" : "apartment",
+            "complex" : "Tuscany",
+            "street_number" : "1"
         }
     },
     "delivery" : {
