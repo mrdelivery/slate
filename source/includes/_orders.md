@@ -221,8 +221,10 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
 
 ```json
 {
-	"coupon": {
-		"code": "FOOD-2792-6130"
+	"discounts": {
+		"coupon": {
+			"code": "FOOD-2792-6130"
+		}
 	}
 }
 ```
@@ -235,25 +237,27 @@ PUT http://qa.mrd.com:8888/orders/{order_id}
 	// full order object
 	// ...
 
-	"coupon": {
-		"_uuid": "b67818fc878911e5af63feff819cdc9f",
-		"_updated_at" : "2015-11-12 14:31",
-		"_created_at" : "2015-11-12 14:31",
-		"_valid_at": "2015-11-12 14:31",
-		"_expires_at": "2015-01-01 00:00:00",
-		"description": "Promotional Coupon",
-		"code" : "FOOD27926130",
-		"value_amount" : 1000,
-		"authorization_count": 1,
-		"usage_count": 0,
-		"usage_limit": 100,
-		"limit_type": "user"
+	"discounts": {
+		"coupon": {
+			"_uuid": "b67818fc878911e5af63feff819cdc9f",
+			"_updated_at" : "2015-11-12 14:31",
+			"_created_at" : "2015-11-12 14:31",
+			"_valid_at": "2015-11-12 14:31",
+			"_expires_at": "2015-01-01 00:00:00",
+			"description": "Promotional Coupon",
+			"code" : "FOOD27926130",
+			"value_amount" : 1000,
+			"authorization_count": 1,
+			"usage_count": 0,
+			"usage_limit": 100,
+			"limit_type": "user"
+		}
 	},
 	"totals" : {
 		// ...
 		// full order totals
 		// ...
-		"discount": "10",
+		"discount": "-10",
 		"total": "274"
 	}
 }
